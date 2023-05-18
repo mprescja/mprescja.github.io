@@ -1,0 +1,227 @@
+/* Galeria */
+h1{
+	margin: 0;
+	padding: 150;
+}
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+
+}
+
+*, *::before, *::after{
+box-sizing: inherit;	
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+}
+
+#galeria{
+	position: fixed;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2px;
+max-width: 700px;
+min-width: 400px;
+padding: 0 10px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#galeria img{
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+#img-activa{
+	width: 100%;
+	height: auto;
+}
+
+#contenedor-principal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.65);
+}
+#contenedor-interno{
+	width: 500px;
+	height: 400px;
+	border: 2px #f3f3f3 solid;
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+button{
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	color: #f3f3f3;
+}
+
+#btn-cierra {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 3rem;
+
+}
+
+#btn-retroceder {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	font-size: 3rem;
+}
+
+#btn-siguiente {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	font-size: 3rem;
+}
+
+/* encabezado */
+header{
+    height: 100px;
+    color:#FFF;
+    font-size:30px;
+    font-family:Sans-serif;
+    background:#ff9633;
+    padding-top:15px;
+    padding-right:50px;
+    position: fixed;
+	line-height: 0.2;
+  }
+
+  .header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;left: 0;
+}
+.container .menu{
+	float: right;
+	line-height: 100px;
+}
+.container .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.container .menu a:hover{
+	border-bottom: 2px solid #c7c7c7;
+	padding-bottom: 5px;
+}
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.container .btn-menu, .logo{
+	float: left;
+	line-height:100px;
+}
+.container .btn-menu label{
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+}
+.logo h1{
+	color: #fff;
+	font-weight: 400;
+	font-size: 22px;
+	margin-left: 10px;
+}
+
+/* Boton Flotante */
+.containersv{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+	z-index: 100;
+  }
+  
+  #btn-mas{
+    display: none;
+  }
+
+  .redes a, .icon-angle-circled-up{
+    display: block;
+    text-decoration: none;
+    background: #cc2b2c;
+    color: #FFF;
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+    font-size: 26px;
+    
+  }
+
+  .redes a:hover{
+    background: #FFF;
+    color: #cc2b2c;
+  }
+
+  .redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .icon-angle-circled-up{
+    cursor: pointer;
+    background: #f44141;
+    font-size: 36px;
+  }
+
+  #btn-mas:checked~ .btn-mas .icon-angle-circled-up{
+transform: rotate(180deg);
+  }
+  
+  .btn-menu, .menu{
+    float: left;
+    line-height: 70px;
+    }
+
+	/*footer*/
+
+	.pie .copy{
+		width: 100%;
+		background-color: #ff9633;
+		padding: 15px 10px;
+		text-align: center;
+		color: #201f1f;
+		position:fixed;
+		font-size: 15px;
+		bottom:20px;
+	}
+	

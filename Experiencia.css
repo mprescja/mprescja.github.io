@@ -1,0 +1,161 @@
+/* Imagenes */
+section {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.image-1 {
+    background-image: url(./imagenes/imagen5.webp);
+}
+
+.image-2 {
+    background-image: url(./imagenes/imagen2.jpg);
+}
+
+.image-3 {
+    background-image: url(./imagenes/imagen3.jpg);
+}
+
+.image-4 {
+    background-image: url(./imagenes/imagen4.jpg);
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Encabezado */
+
+  .header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+  }
+  header{
+    height: 100px;
+    color:#FFF;
+    font-size:35px;
+    font-family:Sans-serif;
+    background:#ff9633;
+    padding-top:30px;
+    padding-left:20px;
+    position: fixed;
+    line-height: 0;
+  }
+  .container .menu{
+    float: right;
+    line-height: 100px;
+  }
+  .container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+  }
+  .container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+  }
+  .container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+  }
+
+  /* Boton Flotante */
+  .containerb{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index: 100;
+  }
+  
+  #btn-mas{
+    display: none;
+  }
+
+  .redes a, .icon-angle-circled-up{
+    display: block;
+    text-decoration: none;
+    background: #cc2b2c;
+    color: #FFF;
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+    font-size: 26px;
+    
+  }
+
+  .redes a:hover{
+    background: #FFF;
+    color: #cc2b2c;
+  }
+
+  .redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .icon-angle-circled-up{
+    cursor: pointer;
+    background: #f44141;
+    font-size: 36px;
+  }
+
+  #btn-mas:checked~ .btn-mas .icon-angle-circled-up{
+transform: rotate(180deg);
+  }
+  
+  .btn-menu, .menu{
+    float: left;
+    line-height: 70px;
+    }
+
+    	/*footer*/
+
+      .pie .copy{
+        width: 100%;
+        background-color: #ff9633;
+        padding: 5px 10px;
+        text-align: center;
+        color: #201f1f;
+        position:fixed;
+        font-size: 15px;
+        bottom:0;
+      }
+
+  

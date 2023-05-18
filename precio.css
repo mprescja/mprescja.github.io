@@ -1,0 +1,203 @@
+section {
+    height: 100vh;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.preciofondo {
+    background-image: url(./imagenes/ciudad\ de\ panama-1204869339.webp);
+    height: 600;
+    width: 100%;
+}
+/*Titulo Formulario*/
+h1{
+    text-align: center;
+
+}
+/*formulario*/
+
+form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid #ff9633;
+    border-radius: 1em;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+
+    
+}
+
+button {
+    margin: 0 auto;
+    background: #ff9633;
+    border: 1px solid #ff9633;
+    border-radius: 1em;
+    width: 100%;
+}
+
+/*encabezado*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    height: 100px;
+    color:#FFF;
+    font-size:50px;
+    font-family:Sans-serif;
+    background:#ff9633;
+    padding-top:30px;
+    padding-left:50px;
+    position: fixed;
+  }
+  .container .menu{
+    float: right;
+    line-height: 100px;
+  }
+  .container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+  }
+  .container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+  }
+  .container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+  }
+
+  /*boton flotante*/
+  .containerb{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+  }
+  
+  #btn-mas{
+    display: none;
+  }
+
+  .redes a, .icon-angle-circled-up{
+    display: block;
+    text-decoration: none;
+    background: #cc2b2c;
+    color: #FFF;
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+    font-size: 26px;
+    
+  }
+
+  .redes a:hover{
+    background: #FFF;
+    color: #cc2b2c;
+  }
+
+  .redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .icon-angle-circled-up{
+    cursor: pointer;
+    background: #f44141;
+    font-size: 36px;
+  }
+
+  #btn-mas:checked~ .btn-mas .icon-angle-circled-up{
+transform: rotate(180deg);
+  }
+
+    /* footer */
+
+    .pie .copy{
+      width: 100%;
+      background-color: #ff9633;
+      padding: 3px 10px;
+      text-align: center;
+      color: #201f1f;
+      position:fixed;
+      font-size: 15px;
+      bottom:0;
+      
+    }
+
+  
